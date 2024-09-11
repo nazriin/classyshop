@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classyshop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="left-side">Get up to 50% off new season styles, limited time only</div>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="right-side">
+                            <ul type="none">
+                                <li><button>dark</button></li>
+                                <li><button id="langBtn" class="btn btn-warning">AZ</button></li>
+                                <li id="disappear"><a href="#">Help Center</a></li>
+                                <li id="disappear"><a href="#">Order tracking</a></li>
+                                <li>
+                                    <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/l/1.jpg" alt="">
+                                    <select>
+                                        <option value="english">English</option>
+                                        <option value="french">French</option>
+                                    </select></a>
+                                </li>
+                                <li style="border: none;">
+                                    <select>
+                                        <option value="usd">USD</option>
+                                        <option value="azn">AZN</option>
+                                    </select></a>
+                                
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/logo-1691412328.jpg" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12">
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search products here...">
+                            <button class="navmiddle">SEARCH</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <a class="navmiddle" href="#">Login/Register</a>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="icons">
+                            <button type="button" class="btn position-relative">
+                                <i class="fa-regular fa-user" id="diss"></i>
+                            </button>
+                            <button type="button" class="btn position-relative">
+                                <i class="fa-solid fa-shuffle"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                    0
+                                </span>
+                            </button>
+                            <button type="button" class="btn position-relative">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                    0
+                                </span>
+                            </button>
+                            <button type="button" class="btn position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                    0
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                                <select>
+                                    <option class="nav-link" value="category">SHOP BY CAREGORIES</option>
+                                </select>
+                            </span>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Fhasion</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">New Arrivals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">All Brands</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Best Deals</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                            </ul>
+                            <span class="rocket" class="nav-link">Free Intenational Delivery</span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="caption">
+                                        <p class="slidermain">Big Saving Days Sale</p>
+                                        <h1 class="slidermain">Woman Solid Round Green T-Shirt</h1>
+                                        <p class="slidermain">Starting At Only <span>$59.00</span></p>
+                                        <button class="slidermain">SHOP NOW</button>
+                                    </div>
+                                    <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-1.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_imageslider/views/img/sample-2.jpg"
+                                        class="d-block w-100" alt="...">
+                                    <div class="caption">
+                                        <p>Big Saving Days Sale</p>
+                                        <h1>Buy Modern Chair In Black Color</h1>
+                                        <p>Starting At Only <span>$99.00</span></p>
+                                        <button>SHOP NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="right-side-box">
+                            <div class="container-fluid p-0">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-sm-12">
+                                        <div class="right-box">
+                                            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg"
+                                                alt="">
+                                            <div class="text" style="padding-left: 12px;">
+                                                <p class="slidermain">Samsung Gear <br> VR Camera</p>
+                                                <span class="price">$129.00</span>
+                                                <a class="slidermain" href="#">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12">
+                                        <div class="right-box">
+                                            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg"
+                                                alt="">
+                                            <div class="text" style="right: 0;width: 60%; padding-right: 12px;">
+                                                <p class="slidermain">Marcel Dining Room Chair</p>
+                                                <span class="price">$129.00</span>
+                                                <a class="slidermain" href="#">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/11-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Smart Tablet</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/12-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Crape T-Shirt</p>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/13-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Leather Watch</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/14-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Rolling Diamond</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/15-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Wooden Chair</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-4 col-sm-6">
+                                    <div class="white-box">
+                                        <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/modules/cz_categoryimagelist/views/img/16-cz_categoryimagelist.jpg"
+                                            alt="">
+                                        <p class="slidermain">Sneaker Shoes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promotion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="red-frame">
+                            <div class="truck">
+                                <p id="shippinglg">FREE SHIPPING</p>
+                            </div>
+                            <div id="shippinglg" class="title">Free delivery NowON Your First Order and over $200</div>
+                            <div id="shippinglg" class="discount">-ONLY $200</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="promotion-box">
+                            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-1.jpg"
+                                alt="">
+                            <div class="text">
+                                <p class="threecard">S22 Samsung <br>Smartphone</p>
+                                <span>$250.00</span>
+                                <a class="threecard" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="promotion-box">
+                            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-2.jpg"
+                                alt="">
+                            <div class="text">
+                                <p class="threecard">Armchair Mad <br>By sgopstic</p>
+                                <span>$190.00</span>
+                                <a class="threecard" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="promotion-box">
+                            <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/cms-banner-3.jpg"
+                                alt="">
+                            <div class="text">
+                                <p class="threecard">Noise Wireless <br> Headphones</p>
+                                <span>$129.00</span>
+                                <a class="threecard" href="#">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="container">
+                <div class="col-12">
+                    <div class="titles">
+                        <span class="sixcard" style="color: #FF5252;">Fashion</span>
+                        <span class="sixcard">Electronic</span>
+                        <span class="sixcard">Furniture</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/35-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/32-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Initech space</a>
+                            <p class="sixcard">Apple Smart Watch / Midnight Aluminium</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/35-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/32-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Initech space</a>
+                            <p class="sixcard">Apple Smart Watch / Midnight Aluminium</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/35-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/32-home_default/brown-bear-printed-sweater.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Initech space</a>
+                            <p class="sixcard">Apple Smart Watch / Midnight Aluminium</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/49-home_default/today-is-a-good-day-framed-poster.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/53-home_default/today-is-a-good-day-framed-poster.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Pro Tech Gear</a>
+                            <p class="sixcard">Cropped Satin Bomber Jacket</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$94.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/70-home_default/mug-today-is-a-good-day.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/71-home_default/mug-today-is-a-good-day.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Soylent Green</a>
+                            <p class="sixcard">Mens Cotton Casual Short Sleeve T-Shirts</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$86.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/85-home_default/hummingbird-cushion.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/86-home_default/hummingbird-cushion.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Gadget zone</a>
+                            <p>Multicolored Open-Knit Crewneck</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$79.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="commercial">
+            <div class="container p-0">
+                <div class="add">
+                    <img src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/offer-banner.jpg" alt="">
+                    <div class="text">
+                        <h1>WATCH</h1>
+                        <p>M6 Smart Brand 2.3-Fitness Band <br>Men's and Women's Health Tracking, Red Strap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-section">
+            <div class="container">
+                <div class="col-12">
+                    <div class="titles">
+                        <span class="sixcardsecond">Latest Products</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/133-home_default/customizable-mug.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/130-home_default/customizable-mug.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Soylent Green</a>
+                            <p class="sixcardsecond">Plastic Bamboo Dustpan & Brush Black</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/133-home_default/customizable-mug.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/130-home_default/customizable-mug.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Soylent Green</a>
+                            <p class="sixcardsecond">Plastic Bamboo Dustpan & Brush Black</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/133-home_default/customizable-mug.jpg"
+                                alt="">
+                            <img class="second-image"
+                                src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/130-home_default/customizable-mug.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Soylent Green</a>
+                            <p class="sixcardsecond">Plastic Bamboo Dustpan & Brush Black</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$51.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/122-home_default/hummingbird-notebook.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/123-home_default/hummingbird-notebook.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Weeds Capital</a>
+                            <p class="sixcardsecond">Nike Air Max Invigor 'Black'7496980</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$94.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/120-home_default/brown-bear-notebook.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/119-home_default/brown-bear-notebook.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">The Simpsons</a>
+                            <p class="sixcardsecond">Smart Speaker & Google Assistant, Light Grey</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$86.00</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 p-0">
+                        <div class="card">
+                            <img class="normal" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/113-home_default/hummingbird-vector-graphics.jpg"
+                                alt="">
+                            <img class="second-image" src="https://demos.codezeel.com/prestashop/PRS21/PRS210502/110-home_default/hummingbird-vector-graphics.jpg"
+                                alt="">
+                            <div class="icons">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-shuffle"></i>
+                                <i class="fa-solid fa-maximize"></i>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </div>
+                            <a href="#">Gadget zone</a>
+                            <p class="sixcardsecond">Multicolored Open-Knit Crewneck</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span>$79.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
